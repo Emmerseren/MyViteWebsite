@@ -1,0 +1,36 @@
+@import "../variables.scss";
+.react {
+    min-height: 100vh;
+    display: grid;
+}
+
+.eyeContainer {
+    justify-self: center;
+    align-self: center;
+    padding: 100px;
+    display: flex;
+    gap: 1em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.eye {
+    height: fit-content;
+    background-color: $primary;
+    box-shadow: $primary 1px 1px 4px 0px inset, $textColor -2px -2px 4px 1px inset;
+    border-radius: 50%;
+    width: fit-content;
+    height: 100px;
+    width: 100px;
+}
+.boxReact {
+    width: 30%;
+    height: 30%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 50%;
+    box-shadow: $primary 1px 1px 4px 0px inset, $textColor -2px -2px 4px 1px inset;
+    background-color: $textColor;
+
+    &.two {
+    }
+}

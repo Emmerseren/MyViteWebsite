@@ -1,0 +1,84 @@
+@import "../variables.scss";
+.StartAnimation{
+        background-color: teal;
+}
+
+.rubiks{
+        rotate: 270deg;
+}
+.Kangaroo, .rubiks{
+        justify-self: center;
+        align-self: center;
+        path{
+                stroke: $hoverColor;
+        }
+}
+
+.play{
+        background-color: $primary;
+        padding: 20px;
+        border-radius: 20px;
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        grid-row: 2/3;
+        animation: buttonpush ease-out forwards .5s;
+        &.active{
+                animation: button ease-out forwards .5s;
+        }
+        svg{
+                width: fit-content;
+                grid-column: 1/1;
+                justify-self: center;
+                align-self: center;
+                grid-row: 1/1;
+
+            path{
+                stroke: $textColor;
+            }
+        }
+}
+
+@keyframes button {
+
+        to{
+                scale: 1.2;
+                box-shadow: -10px 10px 5px  rgba(0,0,0,0.6);
+                -moz-box-shadow: -10px 10px 5px  rgba(0,0,0,0.6);
+                -webkit-box-shadow: -10px 10px 5px  rgba(0,0,0,0.6);
+                -o-box-shadow: -10px 10px 5px  rgba(0,0,0,0.6);  
+        }
+
+        from{
+                scale: 1;
+                box-shadow: -4px 4px 2px  rgba(0,0,0,0.6);
+                -moz-box-shadow: -4px 4px 2px  rgba(0,0,0,0.6);
+                -webkit-box-shadow: -4px 4px 2px  rgba(0,0,0,0.6);
+                -o-box-shadow: -4px 4px 2px  rgba(0,0,0,0.6);  
+        }
+
+}
+
+@keyframes buttonpush {
+
+        to{
+                scale: 1.2;
+                box-shadow: -10px 10px 5px  rgba(0,0,0,0.6);
+                -moz-box-shadow: -10px 10px 5px  rgba(0,0,0,0.6);
+                -webkit-box-shadow: -10px 10px 5px  rgba(0,0,0,0.6);
+                -o-box-shadow: -10px 10px 5px  rgba(0,0,0,0.6);  
+        }
+
+        from{
+                scale: 1;
+                box-shadow: -4px 4px 2px  rgba(0,0,0,0.6);
+                -moz-box-shadow: -4px 4px 2px  rgba(0,0,0,0.6);
+                -webkit-box-shadow: -4px 4px 2px  rgba(0,0,0,0.6);
+                -o-box-shadow: -4px 4px 2px  rgba(0,0,0,0.6);  
+
+        }
+
+}

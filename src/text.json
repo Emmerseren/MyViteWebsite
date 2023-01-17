@@ -1,0 +1,28 @@
+{ 
+    
+  "textDanish": 
+    {
+      "home": "Im danish",
+      "profile": "profil",
+      "adobeman": "Jeg nyder at manipulerer",
+      "logos": "Logoer og illustrationer",
+      "adobeAi": "Stock images used",
+      "AdobexD": "Wireframes og Mockups",
+      "construct": "Under Konstruktion ",
+      "adobePhotoShop": "<span> Jeg hygger mig meget med photoshop, </span> jeg bruger det primært på hobbyplan, men kan opfylde de fleste ønsker fra Fritlægning af et portræt, til zombie transformering. "
+    },
+    
+    "textEnglish": 
+    {
+        "home": "Im English",
+        "profile": "profile",
+        "adobeman": "",
+        "logos": "Logos and illustrations",
+        "AdobexD": "Wireframes and Mockups",
+        "adobeAi": "Stock images used",
+        "construct": "Under Construction",
+        "adobePhotoShop": "<span> I have a lot of fun with photoshop, </span>  I use it mainly on a hobby level, but can fulfill most requests from trimming a portrait to zombie transformation."
+      }
+  
+  
+}

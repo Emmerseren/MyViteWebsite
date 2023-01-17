@@ -1,0 +1,132 @@
+@import "../variables.scss";
+.textBubble {
+    font-size: 4em;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    z-index: 2;
+    color: $primary;
+    border-radius: 50% 50% 0% 50%;
+    transform-origin: right bottom;
+
+    svg {
+        z-index: 5;
+        cursor: pointer;
+        float: left;
+        position: relative;
+    }
+}
+
+.ClosePopUp {
+    position: absolute;
+    font-size: 3rem;
+    top: 10px;
+    right: 10px;
+    transition: all ease .4s;
+     &:hover{
+        scale: 1.5;
+     }
+    path {
+        stroke: $textColor;
+    }
+    cursor: pointer;
+}
+.AdobeLogo {
+    scale: .5;
+}
+.popupAdobe {
+    background-color: $primary;
+    position: absolute;
+    justify-self: center;
+    z-index:5;
+    align-self: center;
+    padding: 1.5rem;
+    display: grid;
+    width: 50vw;
+    border-radius: 10px;
+    gap: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.folder {
+    display: grid;
+    gap: 1em;
+
+    svg {
+        color: $textColor;
+        font-size: 4em;
+        justify-self: center;
+    }
+    span {
+        display: grid;
+        p {
+            color: $textColor;
+            font-size: 1.5em;
+        }
+    }
+    a {
+        justify-self: center;
+        text-decoration: none;
+
+    }
+    a.active{
+            text-decoration: underline;
+            text-decoration-color: $textColor;
+            text-decoration-skip: ink;
+            text-decoration-thickness: 3px;
+    }
+}
+
+.photoShopDes {
+    font-size: 1.7rem;
+    grid-column: 3/4;
+    display: grid;
+    height: 100%;
+    align-self: center;
+
+    span {
+        justify-self: center;
+        font-weight: 700;
+        align-self: center;
+        width: fit-content;
+        font-size: 1.3em;
+    }
+}
+
+
+@media (max-width: 900px) {
+    
+    .photoShopDes {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        text-align: center;
+        height: fit-content;
+        font-size: 1rem;
+        span{
+            font-size: 1.2rem;
+        }
+    }
+
+    .popupAdobe{
+        width: 90vw;
+    }
+ .folder{
+    gap: .5rem;
+    svg{
+        font-size: 2.4rem;
+    }
+
+    span{
+        p{
+            font-size: 1.4rem;
+        }
+    }
+ }
+
+
+
+    
+}

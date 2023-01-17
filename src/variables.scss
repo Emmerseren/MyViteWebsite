@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,400;0,600;1,200;1,300;1,600&display=swap');
+:root {
+    --primary-color: #d6bc95;
+    --text-color: #ffffff;
+    --bg-color: #e8d2aa;
+    --hover-color: #3e3434;
+    --component-bg-color: #ffffff;
+}
+
+[data-theme="dark"] {
+    --primary-color: #3f4e4f;
+    --text-color: #dcd7c9;
+    --bg-color: #2c3639;
+    --hover-color: #a27b5c;
+    --component-bg-color: #ffffff;
+}
+$boxShadow: var(--boxShadow);
+$primary: var(--primary-color);
+$background: var(--bg-color);
+$textColor: var(--text-color);
+$hoverColor: var(--hover-color);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+span {
+    color: $textColor;
+}
+p{
+    color: $textColor;
+}
+
+
+h1 {
+    color: $textColor;
+}
+
+.Contentwrapper{
+    display: grid;
+    background-color: $background;
+    transition: all ease 1s;
+    display: grid;
+    height: 100vh;
+    font-family: "Titillium Web", sans-serif;
+    width: 100vw;
+    
+    
+}
+@media (max-width: 800px) {
+    body {
+        overflow: auto;
+    }
+
+}
+

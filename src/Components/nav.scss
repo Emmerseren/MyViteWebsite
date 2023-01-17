@@ -1,0 +1,109 @@
+@import "../variables.scss";
+
+.menu {
+    font-family: "Titillium Web", sans-serif;
+    position: absolute;
+    z-index: 13;
+    color: $textColor;
+    padding: 35px;
+    display: grid;
+    &:hover {
+        color: $hoverColor;
+        cursor: pointer;
+    }
+
+  
+}
+.line {
+    margin: 3px;
+    transform-origin: center;
+    border-radius: 10px;
+    height: 6px;
+    width: 40px;
+    background-color: $textColor;
+}
+
+
+
+.navBar {
+    width: fit-content;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    display: grid;
+    ul {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        align-self: center;
+        border-radius: 0px 10px 40px 0px;
+        background-color: $primary;
+        height: 80vh;
+        display: grid;
+        justify-items: center;
+        padding: 30px;
+        .theme {
+            align-self: end;
+        }
+        .links {
+            display: grid;
+            justify-items: center;
+            height: fit-content;
+            gap: 3vh;
+        }
+    }
+}
+
+li {
+    list-style: none;
+    font-size: 3em;
+    color: $textColor;
+    transition: all 0.5s ease;
+    &:hover {
+        color: $hoverColor;
+        transform: scale(160%);
+    }
+
+    :hover {
+        color: $hoverColor;
+        cursor: pointer;
+        transition: 400ms ease;
+    }
+    a {
+        color: $textColor;
+        text-decoration: none;
+    }
+    a.active {
+        color: $hoverColor;
+    }
+}
+
+.language{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 800;
+}
+
+.reactLogo {
+    font-size: 3.5em;
+}
+
+.futures {
+    display: grid;
+    gap: 1em;
+    padding-bottom: 20px;
+    justify-items: center;
+    justify-content: center;
+    align-self: end;
+}
+
+@media (max-width: 700px) {
+    li {
+        font-size: 2em;
+    }
+
+    .reactLogo {
+        font-size: 2em;
+    }
+
+    .menu{
+        padding: 30px;
+    }
+}
