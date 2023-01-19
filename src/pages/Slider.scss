@@ -58,7 +58,10 @@
 @media (max-width: 900px) {
     .slides{
         height: 100%;
+        width: 100vw;
+        object-fit: cover;
         scale: 1;
+        border-radius: 0;
     }
 
     .slider {

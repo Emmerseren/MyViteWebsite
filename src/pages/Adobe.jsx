@@ -12,7 +12,6 @@ const Adobe = () => {
     <>
       <AdobeSlider />
       <TextBubble description={description} />
-      
     </>
   );
 };

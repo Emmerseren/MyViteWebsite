@@ -51,7 +51,12 @@ const ReactSkill = () => {
           />
         </div>
       </div>
+      <motion.div>
+
+
+      </motion.div>
     </motion.div>
+    
   );
 };
 

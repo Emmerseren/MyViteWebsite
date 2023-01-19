@@ -3,6 +3,9 @@
 .box {
     overflow: hidden;
     width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
 }
 
 .homeContainer {
@@ -98,6 +101,13 @@
 }
 
 @media (max-width: 900px) {
+
+    .homeContainer{
+    }
+    .profileImage{
+        width: 70%;
+        justify-self: center;
+    }
     .construct{
         display: grid;
         svg:nth-child(1){

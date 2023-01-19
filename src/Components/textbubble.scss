@@ -6,7 +6,8 @@
     width: fit-content;
     right: 0;
     bottom: 0;
-    padding: 15px;
+    scale: .6;
+    padding: 2rem;
     z-index: 2;
     color: $primary;
     border-radius: 50% 50% 0% 50%;
@@ -35,7 +36,8 @@
     cursor: pointer;
 }
 .AdobeLogo {
-    scale: .5;
+    width: fit-content;
+    height: fit-content;
 }
 .popupAdobe {
     background-color: $primary;
@@ -97,7 +99,8 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
+    .textBubble{ scale: .4;}
     
     .photoShopDes {
         grid-row: 2/3;
@@ -111,7 +114,7 @@
     }
 
     .popupAdobe{
-        width: 90vw;
+        width: 80vw;
     }
  .folder{
     gap: .5rem;

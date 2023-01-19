@@ -10,11 +10,11 @@ import { NavLink } from "react-router-dom";
 
 const TextBubble = ({description}) => {
   const [toggle, setToggle] = useState(true);
+  
 
   return (
     <>
-      <AnimatePresence initial={false}>
-        <motion.div
+      <motion.div
           onClick={() => setToggle(!toggle)}
           animate={{ scale: 1.3 }}
           transition={{
@@ -26,6 +26,7 @@ const TextBubble = ({description}) => {
         >
                <AdobeLogo className="AdobeLogo" />
         </motion.div>
+      <AnimatePresence initial={false}>
         {toggle && (
           <motion.div
             key="pop"
